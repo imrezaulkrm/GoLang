@@ -3,7 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	var height, weight, bmi, m float32
+	var height, weight, weight1, bmi, bmi1, m, need float32
+	bmi1 = 22.0
 
 	fmt.Print("Enter Your Height in inc : ")
 	fmt.Scanln(&height)
@@ -24,4 +25,12 @@ func main() {
 		fmt.Printf("You are Obese\nYour BMI is : %.2f\n", bmi)
 	}
 
+	weight1 = bmi1 * m
+	need = weight1 - weight
+
+	if weight1 < weight {
+		fmt.Printf("You need to lose weight : %.2fkg\n", need)
+	} else if weight1 > weight {
+		fmt.Printf("You need to gain weight : %.2f\n", need)
+	}
 }
