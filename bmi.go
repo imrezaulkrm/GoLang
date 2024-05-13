@@ -29,8 +29,8 @@ func main() {
 	need = weight1 - weight
 
 	if weight1 < weight {
-		fmt.Printf("You need to lose weight : %.2fkg\n", need)
+		fmt.Printf("You need to lose weight : %.2fKG\nYou may choose to follow any of these diet plans, but it's important to consult with a reputable dietitian beforehand.\n\n1. Vegan diet\n2. Low carb diet\n3. Mediterranean diet\n4. Atkins diet\n5. Keto diet\n", need)
 	} else if weight1 > weight {
-		fmt.Printf("You need to gain weight : %.2f\n", need)
+		fmt.Printf("You need to gain weight : %.2fKG\nYou may choose to follow any of these diet plans, but it's important to consult with a reputable dietitian beforehand.\n\n1. Bulking diet\n2. High-Calorie Diet\n3. Mass-Gaining Diet\n4. Hypercaloric Diet\n5. Calorie Surplus\n", need)
 	}
 }
