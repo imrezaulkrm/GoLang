@@ -4,6 +4,7 @@ import "fmt"
 
 func main() {
 	var alphabet string
+	fmt.Println("Check vowel or consonant")
 	fmt.Print("Write Your Alphabet: ")
 	fmt.Scanf("%v", &alphabet)
 
@@ -16,3 +17,19 @@ func main() {
 		fmt.Printf("%v is Not Alphabet\n", alphabet)
 	}
 }
+
+/*
+func main() {
+    var alphabet string
+    fmt.Print("Write Your Alphabet: ")
+    fmt.Scanf("%v", &alphabet)
+
+    if alphabet == "a" || alphabet == "e" || alphabet == "i" || alphabet == "o" || alphabet == "u" {
+        fmt.Printf("%v is vowels\n", alphabet)
+    } else if alphabet >= "b" && alphabet <= "z" {
+        fmt.Printf("%v is consonants\n", alphabet)
+    } else {
+        fmt.Printf("%v is Not Alphabet\n", alphabet)
+    }
+}
+*/
